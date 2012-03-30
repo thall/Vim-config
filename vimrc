@@ -1,3 +1,7 @@
+" Pathogen
+call pathogen#infect()
+call pathogen#helptags()
+
 syntax on
 set background=dark
 colorscheme solarized
@@ -7,6 +11,8 @@ set encoding=utf-8
 set expandtab
 set tabstop=2
 set shiftwidth=2
+" Textwidth <= 80
+set tw=80
 
 " Linenumber
 set number
@@ -22,13 +28,6 @@ set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 
-" Omnicppcomplete
-set nocp
-
-" SingleCompile
-filetype plugin on
-nmap <F9> :SCCompile<cr> 
-nmap <F10> :SCCompileRun<cr>
 
 " Change working dir with  'comma c d'
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
