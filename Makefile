@@ -1,10 +1,13 @@
 PWD = `pwd`
+UPDATE = git submodule foreach git pull origin master
+
 all:
 	ln -s $(PWD)/vim ${HOME}/.vim
 	ln -s $(PWD)/vimrc ${HOME}/.vimrc
-	echo "#!/bin/bash\ngit submodule foreach git pull origin master" > updateBundles
-	chmod +x updateBundles
 	git submodule update --init
-	./updateBundles
+	$(UPDATE)
+update:
+	$(UPDATE)
+
 clean:
-	rm ${HOME}/.vim ${HOME}/.vimrc updateBundles
+	rm ${HOME}/.vim ${HOME}/.vimrc
