@@ -27,7 +27,3 @@ set hlsearch                    " highlight matches
 
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
-
-
-" Change working dir with  'comma c d'
-nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
