@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/niclas/.vim'
-let g:netrw_dirhist_2='/Users/niclas/Chalmers/Programming Language Technology - DAT150/Lab3/testsuite/CVS'
-let g:netrw_dirhist_3='/Users/niclas/Programmering/Chalmers/Advanced Functional Programming - TDA342/Lab1'
-let g:netrw_dirhist_4='/Users/niclas/Chalmers/Compiler Construction - TDA282/Javalette/graderTestSuite'
