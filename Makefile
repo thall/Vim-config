@@ -5,7 +5,6 @@ all:
 	ln -s $(PWD)/vim ${HOME}/.vim
 	ln -s $(PWD)/vimrc ${HOME}/.vimrc
 	git submodule update --init
-	$(UPDATE)
 update:
 	$(UPDATE)
 
