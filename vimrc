@@ -3,8 +3,12 @@ call pathogen#infect()
 call pathogen#helptags()
 
 syntax on
+
+" Solarized settings
 set background=dark
 colorscheme solarized
+let g:solarized_termcolors=256
+
 
 set encoding=utf-8
 
