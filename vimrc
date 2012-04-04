@@ -4,6 +4,10 @@ call pathogen#helptags()
 
 syntax on
 
+" Powerline
+set nocompatible
+set laststatus=2
+
 " Solarized settings
 set background=dark
 colorscheme solarized
