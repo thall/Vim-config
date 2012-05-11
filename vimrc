@@ -9,9 +9,10 @@ set nocompatible
 set laststatus=2
 
 " Solarized settings
+let g:solarized_termcolors=256
+set t_Co=256
 set background=dark
 colorscheme solarized
-let g:solarized_termcolors=256
 
 
 set encoding=utf-8
