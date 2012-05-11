@@ -9,7 +9,7 @@ set nocompatible
 set laststatus=2
 
 " Solarized settings
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 set t_Co=256
 set background=dark
 colorscheme solarized
