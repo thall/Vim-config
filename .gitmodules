@@ -16,3 +16,6 @@
 [submodule "vim/bundle/vim-erl"]
 	path = vim/bundle/vim-erl
 	url = https://github.com/jimenezrick/vimerl.git
+[submodule "vim/bundle/vim-snipmate"]
+	path = vim/bundle/vim-snipmate
+	url = git://github.com/garbas/vim-snipmate.git
