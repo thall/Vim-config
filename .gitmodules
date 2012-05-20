@@ -25,3 +25,6 @@
 [submodule "vim/bundle/vim-addon-mw-utils"]
 	path = vim/bundle/vim-addon-mw-utils
 	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "vim/bundle/vim-snipmate-snippets"]
+	path = vim/bundle/vim-snipmate-snippets
+	url = git://github.com/honza/snipmate-snippets.git
