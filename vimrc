@@ -21,6 +21,10 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
+" tab navigation like firefox
+nmap <C-S-tab> :tabprevious<CR>
+nmap <C-tab> :tabnext<CR>
+
 "Column- and linenumber
 set number
 set ruler
