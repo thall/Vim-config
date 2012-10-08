@@ -31,3 +31,9 @@
 [submodule "vim/bundle/vim-agda"]
 	path = vim/bundle/vim-agda
 	url = git://github.com/MarcWeber/vim-addon-agda.git
+[submodule "vim/bundle/vim-zencoding"]
+	path = vim/bundle/vim-zencoding
+	url = git://github.com/mattn/zencoding-vim.git
+[submodule "vim/bundle/vim-minibufexpl"]
+	path = vim/bundle/vim-minibufexpl
+	url = git://github.com/fholgado/minibufexpl.vim.git
