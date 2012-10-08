@@ -28,3 +28,6 @@
 [submodule "vim/bundle/vim-snipmate-snippets"]
 	path = vim/bundle/vim-snipmate-snippets
 	url = git://github.com/honza/snipmate-snippets.git
+[submodule "vim/bundle/vim-agda"]
+	path = vim/bundle/vim-agda
+	url = git://github.com/MarcWeber/vim-addon-agda.git

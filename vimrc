@@ -9,11 +9,10 @@ set nocompatible
 set laststatus=2
 
 " Solarized settings
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 set t_Co=256
 set background=dark
 colorscheme solarized
-
 
 set encoding=utf-8
 
@@ -31,6 +30,16 @@ set hlsearch                    " highlight matches
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
+
+" Agda
+au BufNewFile,BufRead *.agda setf agda
+imap <buffer> \forall ∀ 
+imap <buffer> \to → 
+imap <buffer> \lambda λ 
+imap <buffer> \Sigma Σ 
+imap <buffer> \exists ∃ 
+imap <buffer> \equiv ≡
+
 
 " Backup
 set backup
