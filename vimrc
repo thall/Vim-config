@@ -21,8 +21,8 @@ set tabstop=2
 set shiftwidth=2
 
 " tab navigation like firefox
-nmap <C-S-tab> :tabprevious<CR>
-nmap <C-tab> :tabnext<CR>
+nmap <C-S-tab> :tabprevious
+nmap <C-i> :bn<CR>
 
 "Column- and linenumber
 set number
@@ -36,14 +36,24 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 
 " Agda
-au BufNewFile,BufRead *.agda setf agda
-imap <buffer> \forall ∀ 
-imap <buffer> \to → 
-imap <buffer> \lambda λ 
-imap <buffer> \Sigma Σ 
-imap <buffer> \exists ∃ 
-imap <buffer> \equiv ≡
+" au BufNewFile,BufRead *.agda setf agda
+" imap <buffer> \forall ∀ 
+" imap <buffer> \to → 
+" imap <buffer> \lambda λ 
+" imap <buffer> \Sigma Σ 
+" imap <buffer> \exists ∃ 
+" imap <buffer> \equiv ≡
 
+" Haskellmode
+" use ghc functionality for haskell files
+" au Bufenter *.hs compiler ghc
+
+" enable filetype detection, plus loading of filetype plugins
+" :filetype plugin on
+
+" Configure browser for haskell_doc.vim
+let g:haddock_browser = "open"
+let g:haddock_browser_callformat = "%s %s"
 
 " Backup
 set backup
@@ -76,7 +86,7 @@ let g:miniBufExplCheckDupeBufs = 0
 " \l       : list buffers
 " \b \f \g : go back/forward/last-used
 " \1 \2 \3 : go to buffer 1/2/3 etc
-nnoremap <Leader>l :ls<CR>
+" nnoremap <Leader>l :ls<CR>
 nnoremap <Leader>b :bp<CR>
 nnoremap <Leader>f :bn<CR>
 nnoremap <Leader>g :e#<CR>
