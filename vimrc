@@ -35,21 +35,13 @@ set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 
-" Agda
-" au BufNewFile,BufRead *.agda setf agda
-" imap <buffer> \forall ∀ 
-" imap <buffer> \to → 
-" imap <buffer> \lambda λ 
-" imap <buffer> \Sigma Σ 
-" imap <buffer> \exists ∃ 
-" imap <buffer> \equiv ≡
-
-" Haskellmode
-" use ghc functionality for haskell files
-" au Bufenter *.hs compiler ghc
-
 " enable filetype detection, plus loading of filetype plugins
-" :filetype plugin on
+:filetype plugin on
+
+" remap esc
+ino jj <esc>
+cno jj <c-c>
+vno v <esc>
 
 " Configure browser for haskell_doc.vim
 let g:haddock_browser = "open"
