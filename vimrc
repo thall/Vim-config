@@ -28,6 +28,10 @@ nmap <C-i> :bn<CR>
 set number
 set ruler
 
+"Column- and linehighlight
+set cursorline
+set cursorhighlight
+
 " Searching
 set hlsearch                    " highlight matches
 " Press Space to turn off highlighting and clear any message already displayed.
@@ -38,14 +42,6 @@ set ignorecase                  " searches are case insensitive...
 " enable filetype detection, plus loading of filetype plugins
 :filetype plugin on
 
-" remap esc
-ino jj <esc>
-cno jj <c-c>
-vno v <esc>
-
-" Configure browser for haskell_doc.vim
-let g:haddock_browser = "open"
-let g:haddock_browser_callformat = "%s %s"
 
 " Backup
 set backup
@@ -59,18 +55,6 @@ set undodir=~/.tmp/vim/undodir
 set undofile
 set undolevels=1000 "maximum number of changes that can be undone
 set undoreload=10000 "maximum number lines to save for undo on a buffer reload
-
-" minibufexpl
-let g:miniBufExplSplitBelow = 0
-let g:miniBufExplForceSyntaxEnable = 0
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMaxSize = 0
-let g:miniBufExplModSelTarget = 1
-let g:miniBufExplTabWrap = 1
-let g:miniBufExplUseSingleClick = 1
-let g:miniBufExplCheckDupeBufs = 0
 
 " Shortcuts for switching buffer
 " Mappings to access buffers (don't use "\p" because a
