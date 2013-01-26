@@ -1,6 +1,6 @@
 " Pathogen
-call pathogen#infect()
-call pathogen#helptags()
+execute pathogen#infect()
+execute pathogen#helptags()
 
 syntax on
 
@@ -30,7 +30,7 @@ set ruler
 
 "Column- and linehighlight
 set cursorline
-set cursorhighlight
+set cursorcolumn
 
 " Searching
 set hlsearch                    " highlight matches
