@@ -1,6 +1,6 @@
 " Pathogen
-execute pathogen#infect()
-execute pathogen#helptags()
+call pathogen#infect()
+call pathogen#helptags()
 
 syntax on
 
