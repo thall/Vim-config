@@ -21,8 +21,9 @@ set tabstop=2
 set shiftwidth=2
 
 " tab navigation like firefox
-nmap <C-S-tab> :tabprevious
-nmap <C-i> :bn<CR>
+nnoremap <S-tab> :tabprevious<CR>
+nnoremap <tab> :tabnext<CR>
+nnoremap <C-t> :tabnew<CR>
 
 "Column- and linenumber
 set number
@@ -42,6 +43,9 @@ set ignorecase                  " searches are case insensitive...
 " enable filetype detection, plus loading of filetype plugins
 :filetype plugin on
 
+" Syntactic path
+
+let g:syntastic_cpp_include_dirs = ["/home/tall/metadex/include/"]
 
 " Backup
 set backup
