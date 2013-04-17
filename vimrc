@@ -100,3 +100,26 @@ au BufRead,BufNewFile *.vala,*.vapi setfiletype vala
 "
 " " Minimum lines used for comment syncing (default 50)
 " "let vala_minlines = 120
+
+" Relative line numbers
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <C-n> :call NumberToggle()<cr>
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
+
+" Disable arrows
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
