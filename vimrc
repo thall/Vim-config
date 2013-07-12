@@ -44,7 +44,6 @@ set ignorecase                  " searches are case insensitive...
 :filetype plugin on
 
 " Syntactic path
-
 let g:syntastic_cpp_include_dirs = ["/home/tall/metadex/include/"]
 
 " Backup
